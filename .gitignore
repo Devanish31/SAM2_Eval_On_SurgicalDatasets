@@ -1,0 +1,9 @@
+# Ignore dataset directory
+../Datasets/
+
+# Ignore any otehr large or unnecessary files
+__pycache__/
+*.log
+*.tmp
+*.pt
+*.ckpt
