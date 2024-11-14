@@ -1,0 +1,5 @@
+opencv-python
+pandas
+numpy
+torch
+git+https://github.com/facebookresearch/sam2.git@main#egg=sam2

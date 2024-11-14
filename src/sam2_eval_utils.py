@@ -6,12 +6,9 @@ import torch
 import gc
 import pandas as pd
 from sam2.build_sam import build_sam2_video_predictor
-import hydra
+
 
 device = "cpu"
-# Set the relative paths for the model configuration and checkpoint
-# model_cfg = r"C:\Users\devan\Downloads\SAM2_Eval\SAM2_model_and_cfg\sam2_hiera_l.yaml"
-# checkpoint_path = r"C:\Users\devan\Downloads\SAM2_Eval\SAM2_model_and_cfg\sam2_hiera_large.pt"
 
 # Set base_dir to the directory containing this script (SAM2_Eval_Surgical_Datasets)
 base_dir = os.getcwd()
@@ -77,8 +74,6 @@ def select_point_prompt(mask, num_points=1):
     labels = [1] * len(formatted_points)
 
     return formatted_points, labels
-
-
 
 def save_predicted_mask(predicted_mask, predicted_mask_path):
     """Save the predicted mask to disk."""
