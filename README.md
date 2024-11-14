@@ -1,21 +1,5 @@
 Create a new repository on GitHub without a README.
 
-Add the GitHub repository as a remote:
-
-bash
-Copy code
-git remote add origin https://github.com/yourusername/your-repo-name.git
-git branch -M main
-git push -u origin main
-
-Example Git Commit Workflow
-bash
-Copy code
-git add .
-git commit -m "Initial commit: Added SAM2 evaluation notebook and modular code"
-git push origin main
-
-
 SAM2_Eval/
 ├── SAM2_Eval_Surgical_Datasets/
 │   ├── All_Dataset_SAM_Eval.ipynb       # Notebook for testing SAM2
